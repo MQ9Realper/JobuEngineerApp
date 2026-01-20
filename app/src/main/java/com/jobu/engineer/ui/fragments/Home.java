@@ -1,4 +1,4 @@
-package com.jobu.customer.ui.fragments;
+package com.jobu.engineer.ui.fragments;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -7,13 +7,13 @@ import android.view.View;
 import android.view.ViewGroup;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
-import com.jobu.customer.common.AppUtils;
-import com.jobu.customer.data.models.dto.ServiceCategory;
-import com.jobu.customer.databinding.FragmentHomeBinding;
-import com.jobu.customer.ui.activities.Notifications;
-import com.jobu.customer.ui.activities.RequestService;
-import com.jobu.customer.ui.activities.SelectSubCategories;
-import com.jobu.customer.ui.adapters.AdapterServiceCategories;
+import com.jobu.engineer.common.AppUtils;
+import com.jobu.engineer.data.models.dto.ServiceCategory;
+import com.jobu.engineer.databinding.FragmentHomeBinding;
+import com.jobu.engineer.ui.activities.Notifications;
+import com.jobu.engineer.ui.activities.RequestService;
+import com.jobu.engineer.ui.activities.SelectSubCategories;
+import com.jobu.engineer.ui.adapters.AdapterServiceCategories;
 
 /**
  * Home Fragment.

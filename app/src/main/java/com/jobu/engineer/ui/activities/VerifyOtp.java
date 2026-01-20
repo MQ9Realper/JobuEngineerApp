@@ -1,12 +1,12 @@
-package com.jobu.customer.ui.activities;
+package com.jobu.engineer.ui.activities;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import androidx.appcompat.app.AppCompatActivity;
-import com.jobu.customer.R;
-import com.jobu.customer.common.AppUtils;
-import com.jobu.customer.databinding.ActivityVerifyOtpBinding;
+import com.jobu.engineer.R;
+import com.jobu.engineer.common.AppUtils;
+import com.jobu.engineer.databinding.ActivityVerifyOtpBinding;
 
 /**
  * VerifyOtp Activity.

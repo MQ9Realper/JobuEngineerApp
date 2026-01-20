@@ -19,5 +19,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Jobu Customer"
+rootProject.name = "Jobu Engineer"
 include ':app'

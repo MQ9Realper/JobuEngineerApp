@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:background="@color/white"
     android:orientation="vertical"
-    tools:context=".ui.activities.Notifications">
+    tools:context="com.jobu.engineer.ui.activities.Notifications">
 
     <include
         android:id="@+id/toolbar"

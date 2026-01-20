@@ -1,12 +1,12 @@
-package com.jobu.customer.ui.adapters;
+package com.jobu.engineer.ui.adapters;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentActivity;
 import androidx.viewpager2.adapter.FragmentStateAdapter;
-import com.jobu.customer.ui.fragments.Home;
-import com.jobu.customer.ui.fragments.Jobs;
-import com.jobu.customer.ui.fragments.Profile;
+import com.jobu.engineer.ui.fragments.Home;
+import com.jobu.engineer.ui.fragments.Jobs;
+import com.jobu.engineer.ui.fragments.Profile;
 
 /**
  * Adapter for the bottom navigation.

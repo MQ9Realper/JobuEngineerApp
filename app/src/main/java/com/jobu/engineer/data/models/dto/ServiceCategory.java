@@ -1,4 +1,4 @@
-package com.jobu.customer.data.models.dto;
+package com.jobu.engineer.data.models.dto;
 
 import lombok.Getter;
 import lombok.Setter;

@@ -1,4 +1,4 @@
-package com.jobu.customer.ui.fragments;
+package com.jobu.engineer.ui.fragments;
 
 import android.annotation.SuppressLint;
 import android.os.Bundle;
@@ -6,9 +6,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import androidx.fragment.app.Fragment;
-import com.jobu.customer.BuildConfig;
-import com.jobu.customer.common.AppUtils;
-import com.jobu.customer.databinding.FragmentProfileBinding;
+import com.jobu.engineer.BuildConfig;
+import com.jobu.engineer.common.AppUtils;
+import com.jobu.engineer.databinding.FragmentProfileBinding;
 
 /**
  * Profile Fragment.

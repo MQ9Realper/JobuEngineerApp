@@ -1,11 +1,11 @@
-package com.jobu.customer.ui.fragments;
+package com.jobu.engineer.ui.fragments;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import androidx.fragment.app.Fragment;
-import com.jobu.customer.databinding.FragmentJobsBinding;
+import com.jobu.engineer.databinding.FragmentJobsBinding;
 
 /**
  * Jobs Fragment.

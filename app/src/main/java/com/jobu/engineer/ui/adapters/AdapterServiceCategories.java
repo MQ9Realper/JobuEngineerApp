@@ -1,11 +1,11 @@
-package com.jobu.customer.ui.adapters;
+package com.jobu.engineer.ui.adapters;
 
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
-import com.jobu.customer.data.models.dto.ServiceCategory;
-import com.jobu.customer.databinding.LayoutServiceCategoryListItemBinding;
+import com.jobu.engineer.data.models.dto.ServiceCategory;
+import com.jobu.engineer.databinding.LayoutServiceCategoryListItemBinding;
 import java.util.ArrayList;
 
 /**

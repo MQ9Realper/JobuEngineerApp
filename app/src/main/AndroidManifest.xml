@@ -12,25 +12,25 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.JobuCustomer">
         <activity
-            android:name=".ui.activities.SelectSubCategories"
+            android:name="com.jobu.engineer.ui.activities.SelectSubCategories"
             android:exported="false" />
         <activity
-            android:name=".ui.activities.Notifications"
+            android:name="com.jobu.engineer.ui.activities.Notifications"
             android:exported="false" />
         <activity
-            android:name=".ui.activities.Register"
+            android:name="com.jobu.engineer.ui.activities.Register"
             android:exported="false" />
         <activity
-            android:name=".ui.activities.RequestService"
+            android:name="com.jobu.engineer.ui.activities.RequestService"
             android:exported="false" />
         <activity
-            android:name=".ui.activities.VerifyOtp"
+            android:name="com.jobu.engineer.ui.activities.VerifyOtp"
             android:exported="false" />
         <activity
-            android:name=".ui.activities.Login"
+            android:name="com.jobu.engineer.ui.activities.Login"
             android:exported="false" />
         <activity
-            android:name=".ui.activities.Routing"
+            android:name="com.jobu.engineer.ui.activities.Routing"
             android:exported="true"
             android:theme="@style/Theme.App.Starting">
             <intent-filter>
@@ -40,7 +40,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ui.activities.Main"
+            android:name="com.jobu.engineer.ui.activities.Main"
             android:exported="false" />
     </application>
 

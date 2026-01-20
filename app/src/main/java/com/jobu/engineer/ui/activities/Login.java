@@ -1,4 +1,4 @@
-package com.jobu.customer.ui.activities;
+package com.jobu.engineer.ui.activities;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -8,8 +8,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
-import com.jobu.customer.R;
-import com.jobu.customer.databinding.ActivityLoginBinding;
+import com.jobu.engineer.R;
+import com.jobu.engineer.databinding.ActivityLoginBinding;
 
 /**
  * Login Activity.

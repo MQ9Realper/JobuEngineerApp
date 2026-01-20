@@ -1,9 +1,9 @@
-package com.jobu.customer.ui.activities;
+package com.jobu.engineer.ui.activities;
 
 import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
-import com.jobu.customer.common.AppUtils;
-import com.jobu.customer.databinding.ActivityNotificationsBinding;
+import com.jobu.engineer.common.AppUtils;
+import com.jobu.engineer.databinding.ActivityNotificationsBinding;
 
 /**
  * Notifications Activity.

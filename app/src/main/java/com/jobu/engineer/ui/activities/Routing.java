@@ -1,4 +1,4 @@
-package com.jobu.customer.ui.activities;
+package com.jobu.engineer.ui.activities;
 
 import android.content.Intent;
 import android.os.Bundle;

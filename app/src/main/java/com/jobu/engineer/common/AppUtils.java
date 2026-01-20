@@ -1,4 +1,4 @@
-package com.jobu.customer.common;
+package com.jobu.engineer.common;
 
 import android.app.Activity;
 import android.graphics.Color;
@@ -14,9 +14,9 @@ import androidx.core.view.WindowCompat;
 import androidx.core.view.WindowInsetsCompat;
 import androidx.core.view.WindowInsetsControllerCompat;
 import com.google.android.material.appbar.MaterialToolbar;
-import com.jobu.customer.R;
-import com.jobu.customer.data.models.dto.ServiceCategory;
-import com.jobu.customer.data.models.dto.ServiceSubCategory;
+import com.jobu.engineer.R;
+import com.jobu.engineer.data.models.dto.ServiceCategory;
+import com.jobu.engineer.data.models.dto.ServiceSubCategory;
 import java.util.ArrayList;
 import java.util.Date;
 import org.joda.time.DateTime;

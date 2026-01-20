@@ -1,81 +1,101 @@
-# Jobu Customer App
+# Jobu Engineer App
 
-The **Jobu Customer App** makes getting skilled help easy, fast, and trustworthy. From registering in seconds to tracking your service in real time, Jobu puts everything you need at your fingertips.
+The **Jobu Engineer App** empowers skilled professionals to receive, manage, and complete service jobs efficiently. From secure onboarding to structured job execution, Jobu gives you the tools you need to focus on what you do best — delivering quality work.
 
 ---
 
 ## 🚀 Key Features
 
-### 1. Quick & Secure Registration
-Getting started is simple:
-- Sign up using **your full name, mobile number, and National ID**
+### 1. Secure Engineer Registration & Verification
+Getting onboarded is straightforward and secure:
+- Register using your **full name, mobile number, National ID, email, and password**
 - Verify your mobile number with a **one-time SMS code**
-- National ID verification ensures **trust and safety**
+- National ID verification via IPRS
+- Upload **certification, license, or training documents**
 
-> 🔐 Only verified users can access services, giving you confidence every step of the way.
-
----
-
-### 2. Manage Your Profile
-Once verified, you can:
-- Update your **name and contact details**
-- View your **National ID** (read-only)
-- Track your **job request history**
-
-> ⚠️ Your ID is locked after verification to keep your account secure.
+> 🔐 Every engineer is vetted to maintain trust and service quality on the platform.
 
 ---
 
-### 3. Request Services in Minutes
-Jobu lets you request help in just a few taps:
-1. **Choose a service** – Select a category like Electrical or Plumbing, then a subcategory
-2. **Add job details** – Describe the work and choose a preferred date & time
-3. **Set your location** – Use GPS or enter an address manually
-4. **Submit your request** – Your job is created and engineers are automatically assigned
+### 2. Approval & Activation Workflow
+After registration:
+- Your account status is marked as **Pending Approval**
+- Jobu admins review your:
+    - Identity verification
+    - Uploaded documents
+    - Selected service categories
+- You’ll be notified if you’re:
+    - **Approved** and activated
+    - **Rejected** (with a reason)
+    - Asked to submit additional documents
+
+> ✅ Only approved engineers can receive job requests.
 
 ---
 
-### 4. Track Your Job in Real Time
-Stay informed with every step:
+### 3. Receive & Manage Job Requests
+Once active, you can start receiving jobs instantly:
+- View job requests sent directly to you
+- Accept or reject jobs based on availability
+- Jobs may be:
+    - **Auto-assigned** based on proximity and availability
+    - **Broadcasted** to multiple engineers (first to accept gets the job)
+
+Each job request shows:
+- Service category & subcategory
+- Job description
+- Location details
+- Preferred date & time (if provided)
+
+---
+
+### 4. Execute Jobs with a Clear Workflow
+Jobu guides you through every stage of the job lifecycle:
 
 | Status | What it means |
-|--------|---------------|
-| Requested | Job submitted |
-| Accepted | Engineer accepted your request |
-| En Route | Engineer is on the way |
-| Arrived | Engineer has reached your location |
-| Started | Work has begun (photos included) |
-| Completed | Work finished by the engineer |
-| Acceptance Certificate | You confirm completion |
-| Rating | Share feedback (coming soon) |
+|------|---------------|
+| Requested | Job request received |
+| Accepted | You accepted the job |
+| En Route | You’re on the way |
+| Arrived | You’ve reached the location |
+| Started | Work has begun (upload before photos) |
+| Completed | Work finished (upload after photos & notes) |
+| Acceptance Certificate | Customer confirms completion |
+| Rating | Customer feedback (coming soon) |
 
-> 📌 All updates happen **instantly**, so you’re never in the dark.
+> 📸 Photos and notes ensure transparency and proper job documentation.
 
 ---
 
-### 5. Notifications & Communication
-Jobu keeps you in the loop via:
-- SMS
+### 5. Job History & Performance Tracking
+Keep a full record of your work:
+- View **completed, rejected, and past jobs**
+- Track your activity over time
+- Performance reporting is handled by Jobu admins for quality assurance
+
+---
+
+### 6. Notifications & Updates
+Stay informed at all times via:
+- SMS alerts
 - Push notifications
 - In-app messages
 
-You’ll know the moment your job is accepted, updated, or completed.
+You’ll be notified when:
+- New jobs are available
+- A job is accepted or updated
+- A job is completed
+- Your account status changes
 
 ---
 
-### 6. Confirm & Close Jobs
-Once your engineer completes the work:
-- Review the job
-- Confirm completion with an **Acceptance Certificate**
-- Only then is the job officially closed
-
-> ✅ Ensures you get exactly what you requested, every time.
-
----
-
-## Why Jobu?
-Jobu is built for **trust, speed, and transparency**. No waiting, no confusion—just professional help whenever you need it.
+## Why Jobu for Engineers?
+Jobu is built to help professionals:
+- Get **consistent job opportunities**
+- Work within a **clear and fair system**
+- Build credibility through verified identity and documented work
+- Focus on delivery while the platform handles coordination
 
 ---
 
-**Download the app today and experience seamless service requests in Kenya!**
+**Join Jobu today and connect with customers who need your skills — quickly, securely, and professionally.**

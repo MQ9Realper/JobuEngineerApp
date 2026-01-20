@@ -1,14 +1,14 @@
-package com.jobu.customer.ui.activities;
+package com.jobu.engineer.ui.activities;
 
 import android.os.Bundle;
 import android.view.MenuItem;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import com.google.android.material.navigation.NavigationBarView;
-import com.jobu.customer.R;
-import com.jobu.customer.common.AppUtils;
-import com.jobu.customer.databinding.ActivityMainBinding;
-import com.jobu.customer.ui.adapters.AdapterBottomNavigation;
+import com.jobu.engineer.R;
+import com.jobu.engineer.common.AppUtils;
+import com.jobu.engineer.databinding.ActivityMainBinding;
+import com.jobu.engineer.ui.adapters.AdapterBottomNavigation;
 
 /**
  * Main Activity.

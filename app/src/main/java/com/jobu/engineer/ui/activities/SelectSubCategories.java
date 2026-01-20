@@ -1,14 +1,14 @@
-package com.jobu.customer.ui.activities;
+package com.jobu.engineer.ui.activities;
 
 import android.content.Intent;
 import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
-import com.jobu.customer.common.AppUtils;
-import com.jobu.customer.data.models.dto.ServiceSubCategory;
-import com.jobu.customer.databinding.ActivitySelectSubCategoriesBinding;
-import com.jobu.customer.ui.adapters.AdapterServiceSubCategories;
-import com.jobu.customer.ui.bottomsheets.BottomSheetBookService;
+import com.jobu.engineer.common.AppUtils;
+import com.jobu.engineer.data.models.dto.ServiceSubCategory;
+import com.jobu.engineer.databinding.ActivitySelectSubCategoriesBinding;
+import com.jobu.engineer.ui.adapters.AdapterServiceSubCategories;
+import com.jobu.engineer.ui.bottomsheets.BottomSheetBookService;
 
 /**
  * Select SubCategories Activity.

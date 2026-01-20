@@ -6,7 +6,7 @@
     android:background="@color/white"
     android:orientation="vertical"
     android:padding="16dp"
-    tools:context=".ui.fragments.Profile">
+    tools:context="com.jobu.engineer.ui.fragments.Profile">
 
     <LinearLayout
         android:id="@+id/layoutProfileHeader"
