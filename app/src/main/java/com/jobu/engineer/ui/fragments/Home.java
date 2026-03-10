@@ -1,15 +1,19 @@
 package com.jobu.engineer.ui.fragments;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import androidx.fragment.app.Fragment;
+import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.LinearLayoutManager;
+import com.jobu.engineer.common.AppUtils;
 import com.jobu.engineer.data.models.dto.Job;
 import com.jobu.engineer.databinding.FragmentHomeBinding;
 import com.jobu.engineer.ui.adapters.AvailableJobsAdapter;
 import com.jobu.engineer.ui.bottomsheets.BottomSheetConfirm;
+import com.jobu.engineer.ui.viewmodels.ViewModelUser;
 import java.util.List;
 
 /**
@@ -17,6 +21,7 @@ import java.util.List;
  */
 public class Home extends Fragment {
   private FragmentHomeBinding binding;
+  private ViewModelUser viewModelUser;
 
   public Home() {
     // Required empty public constructor
@@ -32,11 +37,23 @@ public class Home extends Fragment {
                            Bundle savedInstanceState) {
     // Inflate the layout for this fragment
     binding = FragmentHomeBinding.inflate(inflater, container, false);
+    viewModelUser = new ViewModelProvider(requireActivity()).get(ViewModelUser.class);
+
+    // Show greetings
+    showGreetings();
 
     // Show the available jobs
     showJobs();
 
     return binding.getRoot();
+  }
+
+  /**
+   * Display greeting messages.
+   */
+  @SuppressLint("SetTextI18n")
+  private void showGreetings() {
+    binding.txtGreeting.setText("Hello " + AppUtils.getFirstName(viewModelUser.getUserProfile().getName()) + " 👋");
   }
 
   /**

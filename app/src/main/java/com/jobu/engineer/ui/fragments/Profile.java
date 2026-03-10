@@ -54,13 +54,13 @@ public class Profile extends Fragment {
   @SuppressLint("SetTextI18n")
   private void showProfileInfo() {
     UserProfile userProfile = viewModelUser.getUserProfile();
-    binding.initialsView.setText(AppUtils.getInitials("Dennis Mwebia"));
-    binding.txtUsername.setText("Dennis Mwebia");
-    binding.txtUserEmail.setText("dennis@jobu.africa");
+    binding.initialsView.setText(AppUtils.getInitials(userProfile.getName()));
+    binding.txtUsername.setText(userProfile.getName());
+    binding.txtUserEmail.setText(userProfile.getEmail());
     binding.txtStatus.setText("VERIFIED");
-    binding.layoutProfileSpecialization.txtProfileSpecialization.setText("IT Services");
-    binding.layoutProfileYearsOfExperience.txtProfileYearsOfExperience.setText(String.valueOf(15));
-    binding.layoutProfileRate.txtProfileRate.setText("KES " + 5000);
+    binding.layoutProfileSpecialization.txtProfileSpecialization.setText(userProfile.getSpecialization());
+    binding.layoutProfileYearsOfExperience.txtProfileYearsOfExperience.setText(String.valueOf(userProfile.getExperienceYears()));
+    binding.layoutProfileRate.txtProfileRate.setText("KES " + userProfile.getHourlyRate());
     binding.txtAppVersion.setText("v" + BuildConfig.VERSION_NAME + " (" + BuildConfig.VERSION_CODE + ")");
 
     binding.layoutProfileLogout.getRoot().setOnClickListener(v -> showConfirmationDialog());

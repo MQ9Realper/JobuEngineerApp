@@ -31,8 +31,8 @@ public class LoginWithEmail extends AppCompatActivity {
     binding.loginForm.btnLogin.setOnClickListener(new View.OnClickListener() {
       @Override
       public void onClick(View view) {
-        //startAuthAuthentication();
-        startActivity(new Intent(LoginWithEmail.this, Main.class));
+        startAuthAuthentication();
+        //startActivity(new Intent(LoginWithEmail.this, Main.class));
       }
     });
 

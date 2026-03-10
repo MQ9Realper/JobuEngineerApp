@@ -194,17 +194,17 @@ public class PreferenceHelper {
    *
    * @param available a boolean indicating whether the user is available or not
    */
-  public void saveUserAvailable(boolean available) {
+  public void saveUserAvailable(int available) {
     SharedPreferences.Editor editor = sharedPreferences.edit();
-    editor.putBoolean("available", available);
+    editor.putInt("available", available);
     editor.apply();
   }
 
   /**
    * This method retrieves the user available status from shared preferences.
    */
-  public boolean getUserAvailable() {
-    return sharedPreferences.getBoolean("available", false);
+  public int getUserAvailable() {
+    return sharedPreferences.getInt("available", 0);
   }
 
   /**

@@ -72,7 +72,7 @@ public class UserRepository {
           preferenceHelper.saveUserSpecialization(response.body().getUser().getSpecialization());
           preferenceHelper.saveUserExperienceYears(response.body().getUser().getExperienceYears());
           preferenceHelper.saveUserHourlyRate(response.body().getUser().getHourlyRate());
-          preferenceHelper.saveUserAvailable(response.body().getUser().isAvailable());
+          preferenceHelper.saveUserAvailable(response.body().getUser().getAvailable());
           preferenceHelper.saveAuthStatus(true);
           callback.onSuccess(response.body());
         } else {
@@ -109,6 +109,7 @@ public class UserRepository {
     userProfile.setSpecialization(preferenceHelper.getUserSpecialization());
     userProfile.setExperienceYears(preferenceHelper.getUserExperienceYears());
     userProfile.setHourlyRate(preferenceHelper.getUserHourlyRate());
+    userProfile.setLoggedIn(preferenceHelper.isLoggedIn());
     return userProfile;
   }
 

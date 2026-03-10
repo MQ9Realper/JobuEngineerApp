@@ -25,5 +25,5 @@ public class LoginResponseUser {
   @SerializedName("hourly_rate")
   private int hourlyRate;
   @SerializedName("available")
-  private boolean available;
+  private int available;
 }

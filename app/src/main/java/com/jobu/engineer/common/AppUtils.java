@@ -58,6 +58,20 @@ public class AppUtils {
   }
 
   /**
+   * This method extracts the first name from a full name string.
+   *
+   * @param fullName the full name string
+   * @return the first name
+   */
+  public static String getFirstName(String fullName) {
+    if (fullName == null || fullName.trim().isEmpty()) {
+      return "";
+    }
+    String[] nameParts = fullName.trim().split("\\s+");
+    return nameParts[0];
+  }
+
+  /**
    * Initializes the toolbar for an activity.
    *
    * @param activity       The activity where the toolbar is used.

@@ -1,25 +1,31 @@
 package com.jobu.engineer.ui.activities;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
+import android.view.KeyEvent;
 import android.view.MenuItem;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.lifecycle.ViewModelProvider;
 import com.google.android.material.navigation.NavigationBarView;
 import com.jobu.engineer.R;
 import com.jobu.engineer.common.AppUtils;
 import com.jobu.engineer.databinding.ActivityMainBinding;
 import com.jobu.engineer.ui.adapters.AdapterBottomNavigation;
+import com.jobu.engineer.ui.viewmodels.ViewModelUser;
 
 /**
  * Main Activity.
  */
 public class Main extends AppCompatActivity {
   private ActivityMainBinding binding;
+  private ViewModelUser viewModelUser;
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     binding = ActivityMainBinding.inflate(getLayoutInflater());
+    viewModelUser = new ViewModelProvider(this).get(ViewModelUser.class);
     setContentView(binding.getRoot());
 
     // Setup bottom navigation
@@ -62,6 +68,24 @@ public class Main extends AppCompatActivity {
   public boolean onSupportNavigateUp() {
     finish();
     return true;
+  }
+
+  @SuppressLint("GestureBackNavigation")
+  @Override
+  public boolean onKeyDown(int keyCode, KeyEvent event) {
+    if (keyCode == KeyEvent.KEYCODE_BACK) {
+      if (viewModelUser.getUserProfile().isLoggedIn()) {
+        if (binding.viewPager.getCurrentItem() == 0) {
+          moveTaskToBack(true);
+        } else {
+          binding.viewPager.setCurrentItem(0);
+        }
+      } else {
+        finish();
+      }
+      return true;
+    }
+    return super.onKeyDown(keyCode, event);
   }
 
 }

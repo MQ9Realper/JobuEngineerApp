@@ -13,8 +13,9 @@ public class UserProfile {
   private String name;
   private String email;
   private String role;
-  private boolean available;
+  private int available;
   private String specialization;
   private int experienceYears;
   private int hourlyRate;
+  private boolean isLoggedIn;
 }
