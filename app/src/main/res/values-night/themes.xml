@@ -12,6 +12,7 @@
         <item name="colorOnSecondary">@color/white</item>
         <item name="colorSecondaryContainer">@color/secondary_dark</item>
         <item name="colorOnSecondaryContainer">@color/white</item>
+        <item name="bottomSheetDialogTheme">@style/ThemeOverlay.MyBottomSheet</item>
     </style>
 
     <style name="Theme.App.Starting" parent="Theme.SplashScreen">
@@ -88,6 +89,23 @@
         <item name="android:textSize">14sp</item>
         <item name="android:textColor">@color/white</item>
         <item name="android:fontFamily">@font/lexend_light</item>
+    </style>
+
+    <style name="ShapeAppearance.MyBottomSheet" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopLeft">28dp</item>
+        <item name="cornerSizeTopRight">28dp</item>
+        <item name="containerColor">@android:color/white</item>
+    </style>
+
+    <style name="Widget.MyBottomSheet" parent="Widget.Material3.BottomSheet.Modal">
+        <item name="containerColor">@android:color/white</item>
+        <item name="shapeAppearance">@style/ShapeAppearance.MyBottomSheet</item>
+        <item name="android:elevation">8dp</item>
+    </style>
+
+    <style name="ThemeOverlay.MyBottomSheet" parent="ThemeOverlay.Material3.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/Widget.MyBottomSheet</item>
     </style>
 
 </resources>
