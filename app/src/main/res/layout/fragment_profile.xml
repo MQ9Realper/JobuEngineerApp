@@ -44,11 +44,20 @@
                 android:textColor="@color/black"
                 tools:text="Good Morning" />
 
+            <TextView
+                android:id="@+id/txtUserEmail"
+                style="@style/SubTitleTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/grey_50"
+                tools:text="Good Morning" />
+
             <RelativeLayout
                 android:id="@+id/layoutStatus"
                 android:layout_width="wrap_content"
                 android:layout_height="28dp"
-                android:background="@color/not_verified_light">
+                android:background="@color/not_verified_light"
+                android:visibility="gone">
 
                 <TextView
                     android:id="@+id/txtStatus"
@@ -73,25 +82,32 @@
         android:layout_below="@+id/layoutProfileHeader" />
 
     <include
-        android:id="@+id/layoutProfilePhone"
-        layout="@layout/layout_profile_phone"
+        android:id="@+id/layoutProfileSpecialization"
+        layout="@layout/layout_profile_specialization"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/spaceProfile" />
 
     <include
-        android:id="@+id/layoutProfileNationalId"
-        layout="@layout/layout_profile_id"
+        android:id="@+id/layoutProfileYearsOfExperience"
+        layout="@layout/layout_profile_experience"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/layoutProfilePhone" />
+        android:layout_below="@id/layoutProfileSpecialization" />
+
+    <include
+        android:id="@+id/layoutProfileRate"
+        layout="@layout/layout_profile_rate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layoutProfileYearsOfExperience" />
 
     <include
         android:id="@+id/layoutProfileLogout"
         layout="@layout/layout_profile_logout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/layoutProfileNationalId" />
+        android:layout_below="@id/layoutProfileRate" />
 
     <TextView
         android:id="@+id/txtAppVersion"

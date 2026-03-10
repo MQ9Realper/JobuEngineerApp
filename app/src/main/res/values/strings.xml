@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Jobu Engineer</string>
     <string name="home">Home</string>
-    <string name="jobs">Jobs</string>
+    <string name="jobs">History</string>
     <string name="profile">Profile</string>
     <string name="canceled_jobs">Closed</string>
     <string name="completed_jobs">Done</string>

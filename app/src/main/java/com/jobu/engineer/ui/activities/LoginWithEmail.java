@@ -31,34 +31,8 @@ public class LoginWithEmail extends AppCompatActivity {
     binding.loginForm.btnLogin.setOnClickListener(new View.OnClickListener() {
       @Override
       public void onClick(View view) {
-        String email = binding.loginForm.loginEmail.emailEditText.getText().toString().trim();
-        String password = binding.loginForm.loginPassword.passwordEditText.getText().toString().trim();
-
-        if (email.isEmpty() && password.isEmpty()) {
-          AppUtils.showToast(LoginWithEmail.this, "Email and Password are required");
-          binding.loginForm.loginEmail.emailEditText.requestFocus();
-          return;
-        }
-
-        if (!Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
-          AppUtils.showToast(LoginWithEmail.this, "Please enter a valid email address");
-          binding.loginForm.loginEmail.emailEditText.requestFocus();
-          return;
-        }
-
-        if (email.isEmpty()) {
-          AppUtils.showToast(LoginWithEmail.this, "Email is required");
-          binding.loginForm.loginEmail.emailEditText.requestFocus();
-          return;
-        }
-
-        if (password.isEmpty()) {
-          AppUtils.showToast(LoginWithEmail.this, "Password is required");
-          binding.loginForm.loginPassword.passwordEditText.requestFocus();
-          return;
-        }
-
-        authenticateUser(email, password);
+        //startAuthAuthentication();
+        startActivity(new Intent(LoginWithEmail.this, Main.class));
       }
     });
 
@@ -72,6 +46,40 @@ public class LoginWithEmail extends AppCompatActivity {
     // Set the password visibility click listener
     binding.loginForm.loginPassword.passwordVisibility.setOnClickListener(this::togglePasswordVisibility);
 
+  }
+
+  /**
+   * This method is responsible for starting the authentication process by calling the startAuthAuthentication() method.
+   */
+  private void startAuthAuthentication() {
+    String email = binding.loginForm.loginEmail.emailEditText.getText().toString().trim();
+    String password = binding.loginForm.loginPassword.passwordEditText.getText().toString().trim();
+
+    if (email.isEmpty() && password.isEmpty()) {
+      AppUtils.showToast(LoginWithEmail.this, "Email and Password are required");
+      binding.loginForm.loginEmail.emailEditText.requestFocus();
+      return;
+    }
+
+    if (!Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
+      AppUtils.showToast(LoginWithEmail.this, "Please enter a valid email address");
+      binding.loginForm.loginEmail.emailEditText.requestFocus();
+      return;
+    }
+
+    if (email.isEmpty()) {
+      AppUtils.showToast(LoginWithEmail.this, "Email is required");
+      binding.loginForm.loginEmail.emailEditText.requestFocus();
+      return;
+    }
+
+    if (password.isEmpty()) {
+      AppUtils.showToast(LoginWithEmail.this, "Password is required");
+      binding.loginForm.loginPassword.passwordEditText.requestFocus();
+      return;
+    }
+
+    authenticateUser(email, password);
   }
 
   /**

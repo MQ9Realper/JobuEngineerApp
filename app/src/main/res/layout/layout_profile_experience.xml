@@ -28,15 +28,15 @@
             style="@style/ListTitleStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="@color/black"
-            android:text="@string/national_id" />
+            android:textColor="@color/primary"
+            android:text="@string/years_of_experience" />
 
         <TextView
-            android:id="@+id/txtProfileNationalIdentification"
-            style="@style/BodyTextStyle"
+            android:id="@+id/txtProfileYearsOfExperience"
+            style="@style/ListBodyStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="@color/grey_50"
+            android:textColor="@color/grey_60"
             tools:text="367338383" />
 
     </LinearLayout>
