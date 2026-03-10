@@ -36,7 +36,10 @@
     <string name="national_id">National ID</string>
     <string name="logout">Logout</string>
     <string name="logout_description">Logout from the app</string>
-    <string name="first_name">First Name</string>
+    <string name="first_name">Name</string>
+    <string name="enter_your_rate"><font size="15">Enter your hourly rate</font></string>
+    <string name="enter_your_experience"><font size="15">Enter your years of experience</font></string>
+    <string name="enter_your_specialization"><font size="15">Enter your specialization</font></string>
     <string name="enter_your_first_name"><font size="15">Enter your first name</font></string>
     <string name="last_name">Last Name</string>
     <string name="enter_your_last_name"><font size="15">Enter your last name</font></string>
@@ -47,4 +50,21 @@
     <string name="string_mark_all_as_read"><u>Mark all as read</u></string>
     <string name="no_notifications_description">No notifications at the moment. New notifications will be seen here.</string>
     <string name="book_service">Book Service</string>
+    <string name="string_enter_your_password"><font size="15">Enter password</font></string>
+    <string name="string_enter_your_email"><font size="15">Enter email address</font></string>
+    <string name="string_forgot_password"><u>Reset Password</u></string>
+    <string name="string_login">SIGN IN</string>
+    <string name="email_address">Email Address</string>
+    <string name="close">Close</string>
+    <string name="cancel">Cancel</string>
+    <string name="confirm">Confirm</string>
+    <string name="location_address">Location Address</string>
+    <string name="enter_your_location_address"><font size="15">Pick your location address</font></string>
+    <string name="no_services_found">No Services Found</string>
+    <string name="no_services_found_description">There are no services available at the moment. Please check back later or pull to refresh.</string>
+    <string name="string_password">Password</string>
+    <string name="specialization">Specialization</string>
+    <string name="years_of_experience">Years Of Experience</string>
+    <string name="hourly_rate">Hourly Rate</string>
+    <string name="kes">KES</string>
 </resources>

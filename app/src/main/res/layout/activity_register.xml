@@ -24,32 +24,48 @@
             android:padding="16dp">
 
             <include
-                android:id="@+id/layoutRegisterFirstName"
-                layout="@layout/layout_register_first_name" />
+                android:id="@+id/layoutRegisterName"
+                layout="@layout/layout_register_name" />
 
             <Space
                 android:layout_width="0dp"
                 android:layout_height="@dimen/spacing_mlarge" />
 
             <include
-                android:id="@+id/layoutRegisterLastName"
-                layout="@layout/layout_register_last_name" />
+                android:id="@+id/layoutRegisterEmail"
+                layout="@layout/layout_login_email" />
 
             <Space
                 android:layout_width="0dp"
                 android:layout_height="@dimen/spacing_mlarge" />
 
             <include
-                android:id="@+id/layoutRegisterPhoneNumber"
-                layout="@layout/layout_register_phone_number" />
+                android:id="@+id/layoutRegisterSpecialization"
+                layout="@layout/layout_register_specialization" />
 
             <Space
                 android:layout_width="0dp"
                 android:layout_height="@dimen/spacing_mlarge" />
 
             <include
-                android:id="@+id/layoutRegisterNationalId"
-                layout="@layout/layout_register_national_id" />
+                android:id="@+id/layoutRegisterExperience"
+                layout="@layout/layout_register_experience" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="@dimen/spacing_mlarge" />
+
+            <include
+                android:id="@+id/layoutRegisterHourlyRate"
+                layout="@layout/layout_register_rate" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="@dimen/spacing_mlarge" />
+
+            <include
+                android:id="@+id/layoutRegisterPassword"
+                layout="@layout/layout_login_password" />
 
             <Space
                 android:layout_width="0dp"

@@ -9,8 +9,8 @@
     <color name="secondary">#004D8C</color>
     <color name="secondary_light">#336FAD</color>
     <color name="secondary_dark">#004D8C</color>
-    <color name="accent">#60A5FA</color>
-    <color name="accent_light">#66C4C6</color>
+    <color name="accent">#F5A715</color>
+    <color name="accent_light">#FCFAEE</color>
     <color name="accent_dark">#60A5FA</color>
     <color name="buttons">#52b44b</color>
     <color name="buttons_light">#7cd67a</color>
@@ -19,11 +19,18 @@
     <color name="text_primary">#212121</color>
     <color name="text_secondary">#757575</color>
     <color name="grey_5">#f2f2f2</color>
-    <color name="grey_10">#E0E0E0</color>
-    <color name="grey_20">#BDBDBD</color>
-    <color name="grey_30">#9E9E9E</color>
-    <color name="grey_40">#757575</color>
-    <color name="grey_50">#616161</color>
+    <color name="grey_10">#F7F7F7</color>
+    <color name="grey_15">#EFEFEF</color>
+    <color name="grey_20">#E0E0E0</color>
+    <color name="grey_40">#9E9E9E</color>
+    <color name="grey_50">#757575</color>
+    <color name="grey_60">#616161</color>
+    <color name="grey_70">#424242</color>
+    <color name="grey_90">#212121</color>
     <color name="not_verified">#ff0100</color>
     <color name="not_verified_light">#ffefef</color>
+    <color name="success">#3BBD5E</color>
+    <color name="success_light">#C8E6C9</color>
+    <color name="error">#FF0000</color>
+    <color name="error_light">#FFCDD2</color>
 </resources>

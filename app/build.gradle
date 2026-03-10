@@ -1,5 +1,6 @@
 plugins {
     alias(libs.plugins.android.application)
+    id 'realm-android'
 }
 
 android {
@@ -112,6 +113,10 @@ dependencies {
     implementation libs.core.splashscreen
     implementation libs.swiperefreshlayout
     implementation libs.joda.time
+    implementation libs.places
+    implementation libs.converter.gson
+    implementation libs.retrofit
+    implementation libs.lottie
     compileOnly libs.projectlombok.lombok
     annotationProcessor libs.projectlombok.lombok
     testImplementation libs.junit

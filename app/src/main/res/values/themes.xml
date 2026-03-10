@@ -101,15 +101,15 @@
     </style>
 
     <style name="PrimaryMaterialButton" parent="Widget.MaterialComponents.Button">
-        <item name="backgroundTint">@color/buttons</item>
+        <item name="backgroundTint">@color/accent</item>
         <item name="android:textColor">@color/white</item>
         <item name="android:textSize">14sp</item>
         <item name="fontFamily">@font/lexend_bold</item>
         <item name="cornerRadius">@dimen/cardRadius</item>
-        <item name="strokeColor">@color/buttons</item>
+        <item name="strokeColor">@color/accent</item>
         <item name="strokeWidth">1dp</item>
         <item name="elevation">0dp</item>
-        <item name="rippleColor">@color/buttons_light</item>
+        <item name="rippleColor">@color/accent_light</item>
     </style>
 
     <style name="Theme.JobuCustomer" parent="Base.Theme.JobuCustomer" />

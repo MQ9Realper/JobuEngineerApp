@@ -1,10 +1,16 @@
 package com.jobu.engineer.common;
 
 import android.app.Activity;
+import android.app.ProgressDialog;
+import android.content.Context;
 import android.graphics.Color;
+import android.text.method.HideReturnsTransformationMethod;
+import android.text.method.PasswordTransformationMethod;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
@@ -27,6 +33,29 @@ import org.joda.time.format.DateTimeFormatter;
  * Utility class for common app functions.
  */
 public class AppUtils {
+  private static ProgressDialog progressDialog;
+
+  /**
+   * Shows a progress dialog.
+   *
+   * @param context the context.
+   */
+  public static void showProgress(Context context) {
+    progressDialog = new ProgressDialog(context);
+    progressDialog.setProgressStyle(ProgressDialog.STYLE_SPINNER);
+    progressDialog.setMessage("Please wait...");
+    progressDialog.setCancelable(false);
+    progressDialog.show();
+  }
+
+  /**
+   * Hides a progress dialog.
+   */
+  public static void dismissProgress() {
+    if (progressDialog != null) {
+      progressDialog.dismiss();
+    }
+  }
 
   /**
    * Initializes the toolbar for an activity.
@@ -273,6 +302,29 @@ public class AppUtils {
     int blue = Color.blue(color);
     double luminance = (0.299 * red + 0.587 * green + 0.114 * blue) / 255;
     return luminance > 0.5;
+  }
+
+  /**
+   * Toggles the visibility of a password.
+   *
+   * @param passwordEditText   this is the password edit text
+   * @param passwordVisibility this is the password visibility
+   */
+  public static void togglePasswordVisibility(EditText passwordEditText, ImageView passwordVisibility) {
+    // Toggle the transformation method
+    if (passwordEditText.getTransformationMethod() instanceof PasswordTransformationMethod) {
+      // Show password
+      passwordEditText.setTransformationMethod(HideReturnsTransformationMethod.getInstance());
+      passwordVisibility.setImageDrawable(ContextCompat.getDrawable(passwordEditText.getContext(), R.drawable.baseline_visibility_24));
+    } else {
+      // Hide password
+      passwordEditText.setTransformationMethod(PasswordTransformationMethod.getInstance());
+      passwordVisibility.setImageDrawable(ContextCompat.getDrawable(passwordEditText.getContext(), R.drawable.baseline_visibility_off_24));
+    }
+
+    // Refresh the cursor position
+    passwordEditText.setSelection(passwordEditText.getText().length());
+
   }
 
 }

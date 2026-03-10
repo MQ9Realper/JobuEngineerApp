@@ -15,7 +15,7 @@ public class Routing extends AppCompatActivity {
     SplashScreen.installSplashScreen(this);
     super.onCreate(savedInstanceState);
 
-    startActivity(new Intent(this, Login.class));
+    startActivity(new Intent(this, LoginWithEmail.class));
     finish();
 
   }

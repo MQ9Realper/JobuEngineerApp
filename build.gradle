@@ -4,6 +4,10 @@ buildscript {
         google()
         mavenCentral()
     }
+
+    dependencies {
+        classpath (libs.realm.gradle.plugin.v10151)
+    }
 }
 
 plugins {
